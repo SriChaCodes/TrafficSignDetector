@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>Welcome to Our Website!</h2>
+    <p>Your journey begins here.</p>
+
+    <!-- Button to redirect to the registration page -->
+    <a href="{% url 'signup' %}">
+        <button type="submit">Signup here</button>
+    </a>
+{% endblock %}

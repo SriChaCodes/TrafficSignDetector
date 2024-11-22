@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Sign Board Prediction</title>
+    
+    <!-- Link to CSS file in the Static folder -->
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <h1>Traffic Sign Board Prediction</h1>
+        <nav>
+            <a href="/" class="nav-btn">Home</a>
+            <a href="/aboutus" class="nav-btn">About Project</a>
+        </nav>
+    </header>
+
+    <!-- Main Content Block -->
+    <main class="container">
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="#contact">Contact Us</a>
+        </div>
+        <div class="feedback-section">
+            <form action="#" method="post">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="feedback">Feedback:</label>
+                <textarea id="feedback" name="feedback" rows="4" required></textarea>
+                
+                <button type="submit" class="btn">Submit Feedback</button>
+            </form>
+        </div>
+    </footer>
+
+    <!-- Link to JavaScript file in the Static folder -->
+    <script src="{% static 'scripts.js' %}"></script>
+</body>
+</html>
