@@ -20,6 +20,7 @@
     "plyr-react": "^5.1.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-lottie": "^1.2.10",
     "three": "^0.171.0"
   },
   "devDependencies": {
