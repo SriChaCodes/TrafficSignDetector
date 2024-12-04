@@ -122,7 +122,7 @@ const Navbar = () => {
                             </li>
                             <li>
                                 <NavLink
-                                    href="/"
+                                    href="/login"
                                     className="flex items-center justify-center gap-x-1 font-medium text-sm text-white bg-gray-800 hover:bg-gray-700 active:bg-gray-900 rounded-full"
                                 >
                                     Sign in

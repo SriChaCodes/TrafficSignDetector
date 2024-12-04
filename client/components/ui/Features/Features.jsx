@@ -52,7 +52,7 @@ const Features = () => {
 
     return (
         <SectionWrapper>
-            <div className="w-full py-10 bg-slate-800">
+            <div className="w-full py-10 bg-slate-900">
                 <div className="max-w-screen-xl mx-auto text-center">
                     <h2 className="text-4xl font-bold text-white mb-8">Features</h2>
                     <div className="grid md:grid-cols-3 gap-6">

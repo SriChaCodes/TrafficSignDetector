@@ -50,7 +50,7 @@ const Hero = () => {
                         {/* Buttons */}
                         <div className="items-center gap-x-3 font-medium text-sm sm:flex sm:justify-center xl:justify-start">
                             <NavLink
-                                href="#pricing"
+                                href="/chatbot"
                                 className="block text-white bg-sky-500 hover:bg-sky-600 active:bg-sky-700"
                                 scroll={false}
                             >
