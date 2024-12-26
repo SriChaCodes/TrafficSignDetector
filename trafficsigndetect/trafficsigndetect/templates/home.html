@@ -1,0 +1,69 @@
+{% extends "base_home.html" %}
+{% block content %}
+
+<h2>Traffic Sign Recognition Using CNN</h2>
+<img src="https://i.postimg.cc/rFYVTRnN/yellow-traffic-sign-set-isolated-white-background-97458-258.jpg" 
+alt="" style="width: 30%; height:30%">
+
+<div>
+    <form id="upload-file" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <label for="imageUpload" class="upload-label">Choose...</label>
+        <input type="file" name="file" id="imageUpload" accept=".png, .jpg, .jpeg">
+    </form>
+
+    <div class="image-section" style="display:none;">
+        <div class="img-preview">
+            <div id="imagePreview"></div>
+        </div>
+        <div>
+            <button type="button" class="btn btn-primary btn-lg" id="btn-predict">Predict!</button>
+        </div>
+    </div>
+
+    <div class="loader" style="display:none;"></div>
+
+    <h3 id="result"><span> </span></h3>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        
+        $("#imageUpload").change(function () {
+            const file = this.files[0];
+            if (file) {
+                let reader = new FileReader();
+                reader.onload = function (e) {
+                    $("#imagePreview").css("background-image", `url(${e.target.result})`);
+                    $(".image-section").show();
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+
+        
+        $("#btn-predict").click(function () {
+            const formData = new FormData($("#upload-file")[0]);
+            $(".loader").show();
+
+            $.ajax({
+                type: 'POST',
+                url: '{% url "predict" %}',
+                data: formData,
+                contentType: false,
+                processData: false,
+                success: function (data) {
+                    $(".loader").hide();
+                    $("#result").text(data.result);
+                },
+                error: function () {
+                    $(".loader").hide();
+                    alert("An error occurred. Please try again.");
+                }
+            });
+        });
+    });
+</script>
+
+{% endblock %}

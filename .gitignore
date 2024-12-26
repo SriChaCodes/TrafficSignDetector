@@ -1,0 +1,31 @@
+/Dataset
+/venv
+# Python cache files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyc
+
+# Virtual environment
+venv/
+
+# Django specific
+*.log
+*.pot
+*.pyc
+*.sqlite3
+db.sqlite3
+
+# Media/uploads
+trafficsign_detection/media/uploads/
+trafficsigndetect/uploads
+# Machine learning models
+model.h5
+
+# IDE-specific files
+.vscode/
+.idea/
+
+# OS-generated files
+.DS_Store
+Thumbs.db

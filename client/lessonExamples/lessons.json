@@ -1,0 +1,50 @@
+[
+    {
+        "thumbnail": "/images/1.jpg",
+        "lesson": "/models/sign.json",
+        "title": "Real-time Traffic Sign Detection",
+        "description": "Detect and classify traffic signs in real-time for safer and smarter roads using computer vision.",
+        "duration": "",
+        "slug": "real-time-traffic-sign-detection"
+    },
+    {
+        "thumbnail": "/images/2.jpg",
+        "lesson": "/models/sign.json",
+        "title": "High Accuracy in Diverse Environments",
+        "description": "Achieve high accuracy in detecting traffic signs under different environmental conditions.",
+        "duration": "",
+        "slug": "high-accuracy-in-diverse-environments"
+    },
+    {
+        "thumbnail": "/images/3.jpg",
+        "lesson": "/models/sign.json",
+        "title": "Optimized for Low-Power Edge Devices",
+        "description": "The model is optimized to run efficiently on edge devices with limited processing power.",
+        "duration": "",
+        "slug": "optimized-for-low-power-edge-devices"
+    },
+    {
+        "thumbnail": "/images/4.jpg",
+        "lesson": "/models/sign.json",
+        "title": "Detects Regulatory, Warning, and Informational Signs",
+        "description": "Classify a variety of traffic signs including regulatory, warning, and informational types.",
+        "duration": "",
+        "slug": "detects-regulatory-warning-and-informational-signs"
+    },
+    {
+        "thumbnail": "/images/5.jpg",
+        "lesson": "/models/sign.json",
+        "title": "Essential for Autonomous Vehicle Safety",
+        "description": "Critical for the safety systems in autonomous vehicles by detecting road signs in real time.",
+        "duration": "",
+        "slug": "essential-for-autonomous-vehicle-safety"
+    },
+    {
+        "thumbnail": "/images/6.jpg",
+        "lesson": "/models/sign.json",
+        "title": "Edge Computing for Traffic Sign Detection",
+        "description": "Leverage edge computing techniques to process traffic sign data locally for faster decisions.",
+        "duration": "",
+        "slug": "edge-computing-for-traffic-sign-detection"
+    }
+]
