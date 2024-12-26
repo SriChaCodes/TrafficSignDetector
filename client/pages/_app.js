@@ -8,7 +8,7 @@ export default function App({ Component, pageProps, ...appProps }) {
   // that switches to actual Layout or React.Fragment (no layout)
   // accordingly to pathname
   // array of all the paths that doesn't need layout
-  const isLayoutNeeded = !["/login"].includes(appProps.router.pathname);
+  const isLayoutNeeded = !["/login", "/signup"].includes(appProps.router.pathname);
 
   const LayoutComponent = isLayoutNeeded ? Layout : React.Fragment;
 
