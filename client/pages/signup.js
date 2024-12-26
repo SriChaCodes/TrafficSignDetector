@@ -1,14 +1,13 @@
 import Head from "next/head";
 import Link from "next/link";
-import Brand from "../components/ui/Brand"; // Make sure you have this component
-import Button from "../components/ui/Button"; // Make sure you have this component
-import Input from "../components/ui/Input"; // Make sure you have this component
+import Button from "../components/ui/Button"; // Ensure this component is available
+import Input from "../components/ui/Input"; // Ensure this component is available
 
-export default function Login() {
+export default function signup() {
   return (
     <>
       <Head>
-        <title>Login - IO Academy</title>
+        <title>Sign Up - IO Academy</title>
       </Head>
       <main className="bg-white dark:bg-gray-900">
         <div className="flex justify-center h-screen">
@@ -18,28 +17,27 @@ export default function Login() {
               <div>
                 <h2 className="text-2xl font-bold text-white sm:text-3xl">Meraki UI</h2>
                 <p className="max-w-xl mt-3 text-gray-300">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. In autem ipsa, nulla laboriosam dolores, repellendus perferendis libero suscipit nam temporibus molestiae.
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. In autem ipsa, nulla laboriosam dolores, repellendus perferendis libero suscipit nam temporibus molestiae
                 </p>
               </div>
             </div>
           </div>
 
-          {/* Login Form Section */}
+          {/* Sign Up Form Section */}
           <div className="flex items-center w-full max-w-md px-6 mx-auto lg:w-2/6">
             <div className="flex-1">
               <div className="text-center">
                 <div className="flex justify-center mx-auto">
                   <img className="w-auto h-7 sm:h-8" src="https://merakiui.com/images/logo.svg" alt="" />
                 </div>
-
-                <p className="mt-3 text-gray-500 dark:text-gray-300">Sign in to access your account</p>
+                <p className="mt-3 text-gray-500 dark:text-gray-300">Create your account</p>
               </div>
 
               <div className="mt-8">
                 <form onSubmit={(e) => e.preventDefault()}>
                   {/* Email Field */}
                   <div>
-                    <label className="block mb-2 text-sm text-gray-600 dark:text-gray-200">Email Address</label>
+                    <label htmlFor="email" className="block mb-2 text-sm text-gray-600 dark:text-gray-200">Email Address</label>
                     <Input
                       type="email"
                       required
@@ -51,8 +49,7 @@ export default function Login() {
                   {/* Password Field */}
                   <div className="mt-6">
                     <div className="flex justify-between mb-2">
-                      <label className="text-sm text-gray-600 dark:text-gray-200">Password</label>
-                      <Link href="#" className="text-sm text-gray-400 focus:text-blue-500 hover:text-blue-500 hover:underline">Forgot password?</Link>
+                      <label htmlFor="password" className="text-sm text-gray-600 dark:text-gray-200">Password</label>
                     </div>
                     <Input
                       type="password"
@@ -62,19 +59,19 @@ export default function Login() {
                     />
                   </div>
 
-                  {/* Sign In Button */}
+                  {/* Sign Up Button */}
                   <div className="mt-6">
                     <Button className="w-full px-4 py-2 tracking-wide text-white transition-colors duration-300 transform bg-blue-500 rounded-lg hover:bg-blue-400 focus:outline-none focus:bg-blue-400 focus:ring focus:ring-blue-300 focus:ring-opacity-50">
-                      Sign in
+                      Sign Up
                     </Button>
                   </div>
                 </form>
 
-                {/* Sign Up Link */}
+                {/* Login Link */}
                 <p className="mt-6 text-sm text-center text-gray-400">
-                  Don&#x27;t have an account yet?{" "}
-                  <Link href="/signup" className="text-blue-500 focus:outline-none focus:underline hover:underline">
-                    Sign up
+                  Already have an account?{" "}
+                  <Link href="/login" className="text-blue-500 focus:outline-none focus:underline hover:underline">
+                    Log in
                   </Link>.
                 </p>
               </div>
