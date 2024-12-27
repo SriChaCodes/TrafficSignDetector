@@ -1,0 +1,31 @@
+
+# Backend Setup (Terminal 1)
+# 1. Navigate to project directory
+cd D:\trafficsign_detection\trafficsign_detection
+
+# 2. Activate virtual environment
+.\venv\Scripts\activate
+
+# 3. Apply migrations
+python manage.py migrate
+
+# 4. Start development server
+python manage.py runserver
+
+# Frontend Setup (Terminal 2)
+# 1. Navigate to frontend directory
+cd D:\trafficsign_detection\client
+
+# 2. Install dependencies (if not already installed)
+npm install
+
+# 3. Start development server
+npm run dev
+
+# Verify Setup
+Backend: http://localhost:8000
+Frontend: http://localhost:3000
+
+# Stop Servers
+Backend: Ctrl+Break
+Frontend: Ctrl+C
