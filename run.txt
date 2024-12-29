@@ -1,4 +1,3 @@
-
 # Backend Setup (Terminal 1)
 # 1. Navigate to project directory
 cd D:\trafficsign_detection\trafficsign_detection
